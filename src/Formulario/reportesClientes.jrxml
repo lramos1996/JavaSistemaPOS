@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="23259c82-ef51-4b44-a76b-90bce390d904">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="48"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SEXO" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="DNI" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     cliente.cod_cli, 
+     cliente.nom_cli,
+     cliente.ape_cli,
+     cliente.sexo_cli,
+     cliente.dni_cli,
+     cliente.tel_cli,
+     cliente.ruc_cli,
+     cliente.email_cli, 
+     cliente.dir_cli 
+FROM
+     cliente
+where
+	cliente.dni_cli like  '%$P!{DNI}%'
+and	cliente.sexo_cli like '%$P!{SEXO}%']]>
+	</queryString>
+	<field name="cod_cli" class="java.lang.String"/>
+	<field name="nom_cli" class="java.lang.String"/>
+	<field name="ape_cli" class="java.lang.String"/>
+	<field name="sexo_cli" class="java.lang.String"/>
+	<field name="dni_cli" class="java.lang.String"/>
+	<field name="tel_cli" class="java.lang.String"/>
+	<field name="ruc_cli" class="java.lang.String"/>
+	<field name="email_cli" class="java.lang.String"/>
+	<field name="dir_cli" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="57" splitType="Stretch">
+			<line>
+				<reportElement uuid="06b397c0-b2ca-4f5d-98ff-f29a8bf29dc9" x="0" y="8" width="802" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="80176c83-0227-4b3c-b2ec-54f975af4244" positionType="FixRelativeToBottom" x="0" y="51" width="802" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="74a17f35-fe5b-4468-83ba-96bab7ab2cb7" x="180" y="9" width="424" height="35"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE DE CLIENTES]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="18" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="8bf6155e-cd6e-44a2-b662-8a104a25cfc9" mode="Opaque" x="0" y="0" width="61" height="18" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[CODIGO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="05c3fa74-4c2c-4288-b51c-5df0a5bf9584" mode="Opaque" x="71" y="0" width="93" height="18" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[NOMBRES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="29d0db5d-32d9-425b-a109-a3f78b064ea2" mode="Opaque" x="180" y="0" width="99" height="18" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[APELLIDOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="14a3609f-309c-4509-961f-808094ac01d4" mode="Opaque" x="297" y="0" width="34" height="18" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[SEXO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="27f5f701-f7c2-4ec2-8cae-4cf1ef501661" mode="Opaque" x="342" y="0" width="47" height="18" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[DNI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="77d7f7d5-89b1-4cf4-bb77-0b89782f235f" mode="Opaque" x="403" y="0" width="78" height="18" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[TELEFONO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="754d6132-0c2e-47f4-83c5-fa48ef737f7c" mode="Opaque" x="494" y="0" width="61" height="18" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[RUC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="79dd8c9e-a1f4-48d3-b7c2-6c5a6f07d487" mode="Opaque" x="569" y="0" width="105" height="18" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[EMAIL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="44590a1c-5793-4034-a0de-c3cf758c2bb6" mode="Opaque" x="685" y="0" width="117" height="18" forecolor="#FFFFFF" backcolor="#999999"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[DIRECCION]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="d49f3b97-e3b1-447f-a6f6-4ecebc3a087b" x="1" y="0" width="60" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cod_cli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d73e262d-a24d-403c-879c-649d25d415f4" x="71" y="0" width="93" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nom_cli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="49556788-5247-4663-904b-93c80f6add57" x="180" y="0" width="99" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ape_cli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c113e397-7f7c-40b0-994a-be336b3168c0" x="297" y="0" width="34" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sexo_cli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="83ddfec3-f4ba-4a05-9519-250aa3456b02" x="342" y="0" width="47" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dni_cli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a61b44ee-d69e-4768-8ac9-1a88a3127879" x="403" y="0" width="78" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tel_cli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="483ed471-80aa-4ca5-8a6a-a56a6923ada3" x="494" y="0" width="61" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ruc_cli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0d1891fc-a0db-4682-8a28-269d5baea9cc" x="569" y="0" width="105" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{email_cli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e67d13ce-4114-427e-8c1b-0efa1c08234e" x="685" y="0" width="117" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dir_cli}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="26" splitType="Stretch">
+			<textField evaluationTime="Report" pattern="" isBlankWhenNull="false">
+				<reportElement uuid="69cdf1bf-8326-48b7-8e9e-89a920dfbb79" key="textField" x="516" y="6" width="36" height="19" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["" + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement uuid="85e66194-1495-4ca3-a844-88071b5b0459" key="textField" x="342" y="6" width="170" height="19" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER} + " of "]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement uuid="634a248a-2fa3-43cb-8eae-12334f4e6cbc" key="textField" x="1" y="6" width="209" height="19" forecolor="#000000" backcolor="#FFFFFF"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
