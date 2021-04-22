@@ -29,6 +29,7 @@ public class Principal extends javax.swing.JFrame {
     public Principal() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setExtendedState(MAXIMIZED_BOTH);
         //this.setUndecorated(true);
        //this.setExtendedState(Principal.MAXIMIZED_BOTH);    
         //this.setExtendedState(this.getExtendedState() | JFrame.MAXIMIZED_BOTH);
@@ -105,6 +106,7 @@ public class Principal extends javax.swing.JFrame {
         setTitle("Sistema de Ventas  LR.Soft");
         setBackground(new java.awt.Color(255, 255, 204));
         setExtendedState(MAXIMIZED_BOTH);
+        setPreferredSize(new java.awt.Dimension(1920, 1080));
 
         jdpescritorio.setBackground(new java.awt.Color(25, 153, 153));
         jdpescritorio.setAutoscrolls(true);
@@ -367,11 +369,11 @@ public class Principal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jdpescritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 970, Short.MAX_VALUE)
+            .addComponent(jdpescritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 1920, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jdpescritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 566, Short.MAX_VALUE)
+            .addComponent(jdpescritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 1080, Short.MAX_VALUE)
         );
 
         getAccessibleContext().setAccessibleDescription("Software creado por LR.");
