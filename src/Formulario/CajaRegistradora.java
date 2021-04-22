@@ -257,11 +257,11 @@ public final class CajaRegistradora extends javax.swing.JInternalFrame {
         setMinimumSize(new java.awt.Dimension(832, 655));
         setPreferredSize(new java.awt.Dimension(832, 655));
 
-        jPanel7.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel7.setBackground(new java.awt.Color(221, 230, 239));
 
-        jPanel5.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel5.setBackground(new java.awt.Color(34, 50, 63));
 
-        btnCerrarCaja.setBackground(new java.awt.Color(51, 204, 255));
+        btnCerrarCaja.setBackground(new java.awt.Color(0, 178, 154));
         btnCerrarCaja.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerrarCaja.png"))); // NOI18N
         btnCerrarCaja.setText("Cerrar Caja");
         btnCerrarCaja.setHideActionText(true);
@@ -274,19 +274,19 @@ public final class CajaRegistradora extends javax.swing.JInternalFrame {
             }
         });
 
-        jPanel6.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel6.setBackground(new java.awt.Color(53, 77, 97));
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 0)), "INFORMES", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 1, 14), new java.awt.Color(255, 255, 255))); // NOI18N
         jPanel6.setToolTipText("");
 
-        btnFProducto.setBackground(new java.awt.Color(51, 204, 255));
+        btnFProducto.setBackground(new java.awt.Color(0, 178, 154));
         btnFProducto.setText("F. Producto");
         btnFProducto.setFocusable(false);
 
-        btnLVentas.setBackground(new java.awt.Color(51, 204, 255));
+        btnLVentas.setBackground(new java.awt.Color(0, 178, 154));
         btnLVentas.setText("L. Ventas");
         btnLVentas.setFocusable(false);
 
-        btnFEfectivo.setBackground(new java.awt.Color(51, 204, 255));
+        btnFEfectivo.setBackground(new java.awt.Color(0, 178, 154));
         btnFEfectivo.setText("F. Efectivo");
         btnFEfectivo.setFocusable(false);
 
@@ -314,7 +314,7 @@ public final class CajaRegistradora extends javax.swing.JInternalFrame {
                 .addContainerGap())
         );
 
-        btnAbrirCaja.setBackground(new java.awt.Color(51, 204, 255));
+        btnAbrirCaja.setBackground(new java.awt.Color(0, 178, 154));
         btnAbrirCaja.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/caja-registradora.png"))); // NOI18N
         btnAbrirCaja.setText("Abrir Caja");
         btnAbrirCaja.setToolTipText("");
@@ -365,10 +365,10 @@ public final class CajaRegistradora extends javax.swing.JInternalFrame {
                     .addContainerGap(531, Short.MAX_VALUE)))
         );
 
-        jPanel1.setBackground(new java.awt.Color(227, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(21, 34, 42));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jPanel2.setBackground(new java.awt.Color(0, 102, 102));
+        jPanel2.setBackground(new java.awt.Color(0, 178, 154));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Productos Venta", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Yu Gothic UI Light", 1, 14), new java.awt.Color(255, 255, 255))); // NOI18N
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
 
@@ -509,7 +509,7 @@ public final class CajaRegistradora extends javax.swing.JInternalFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(255, 153, 51));
+        jPanel3.setBackground(new java.awt.Color(58, 75, 83));
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         tbRegistro.setModel(new javax.swing.table.DefaultTableModel(
@@ -617,7 +617,7 @@ public final class CajaRegistradora extends javax.swing.JInternalFrame {
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Vuelto");
 
-        btnCobrar.setBackground(new java.awt.Color(51, 51, 255));
+        btnCobrar.setBackground(new java.awt.Color(6, 176, 212));
         btnCobrar.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         btnCobrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/efectivoNormal.png"))); // NOI18N
         btnCobrar.setText("Cobrar");
@@ -632,7 +632,7 @@ public final class CajaRegistradora extends javax.swing.JInternalFrame {
 
         jLabel11.setBackground(new java.awt.Color(51, 51, 0));
         jLabel11.setFont(new java.awt.Font("Yu Gothic UI Light", 1, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(102, 0, 102));
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Detalle Productos");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -720,12 +720,12 @@ public final class CajaRegistradora extends javax.swing.JInternalFrame {
                 .addGap(7, 7, 7))
         );
 
-        jPanel4.setBackground(new java.awt.Color(227, 255, 255));
+        jPanel4.setBackground(new java.awt.Color(125, 138, 144));
         jPanel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(0, 102, 102), null, null));
         jPanel4.setToolTipText("");
 
         txtTicket.setEditable(false);
-        txtTicket.setBackground(new java.awt.Color(255, 153, 51));
+        txtTicket.setBackground(new java.awt.Color(153, 153, 255));
         txtTicket.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         txtTicket.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -734,14 +734,16 @@ public final class CajaRegistradora extends javax.swing.JInternalFrame {
         });
 
         txtFecha.setEditable(false);
-        txtFecha.setBackground(new java.awt.Color(255, 153, 51));
+        txtFecha.setBackground(new java.awt.Color(153, 153, 255));
         txtFecha.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        txtFecha.setForeground(new java.awt.Color(255, 0, 0));
+        txtFecha.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel9.setFont(new java.awt.Font("Cambria Math", 1, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Ticket N°");
 
         jLabel10.setFont(new java.awt.Font("Cambria Math", 1, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Fecha");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -773,7 +775,9 @@ public final class CajaRegistradora extends javax.swing.JInternalFrame {
                 .addGap(15, 15, 15))
         );
 
+        jLabel12.setBackground(new java.awt.Color(255, 255, 255));
         jLabel12.setFont(new java.awt.Font("Harrington", 1, 36)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("      G&H Company");
         jLabel12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
